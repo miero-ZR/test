@@ -1,25 +1,56 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filterbare Inhoud</title>
-    <link rel="stylesheet" href="styles.css"> </head> <body>
-    <div class="container">
-        <div class="filter">
-            <h2>Selecteer een categorie:</h2>
-            <label><input type="radio" name="category" value="categorie1"> Categorie 1</label><br>
-            <label><input type="radio" name="category" value="categorie2"> Categorie 2</label><br>
-            <label><input type="radio" name="category" value="categorie3"> Categorie 3</label>
+    <meta charset="utf-8" />
+
+    <!-- add your own title here -->
+    <title>STORAGEWIJZER</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap"
+          rel="stylesheet" />
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+    <script src="config.js"></script>
+</head>
+<body>
+    <div id="eventHandler" class="input hidden"></div>
+
+    <div class="grid-container">
+        <div id="controls">
+            <!-- your own title and description here -->
+            <h1>STORAGEWIJZER</h1>
+            <p>
+                Deze Storagewijzer helpt je bij het kiezen van centrale IT-oplossingen voor opslag en beheer van gegevens.
+                Op basis van de behoeften die je aangeeft in de linkerkolom worden de mogelijke oplossingen getoond.
+                Klik op een oplossing om meer details te zien;
+                Voor meer informatie kan je contact opnemen met het ICTS Servicepunt of met het Steunpunt RDM.
+            </p>
+
+            <!-- add any links to your paper and relevant materials here -->
+            <a href="https://github.com/miero-ZR/test"
+               target="_blank">View on GitHub</a>
+
+            <!-- modify headers and labels for your collection as needed -->
+            <h2>Select filters:</h2>
+            <span id="count"></span> / <span id="total"></span> items (<span href="#"
+                                                                             id="showall">show all</span>)
+
+            <div id="filters"></div>
+            <h3>Filter by tag</h3>
+            <div id="filters_data"></div>
+
+            <!-- Please don't remove this note :) -->
+            <br />
+            Website template by
+            <a href="https://github.com/sarah37/" target="_blank">Sarah Schöttler.</a>
         </div>
-        <div class="content">
-            <div class="item" data-category="categorie1">Inhoud voor Categorie 1</div>
-            <div class="item" data-category="categorie2">Inhoud voor Categorie 2</div>
-            <div class="item" data-category="categorie3">Inhoud voor Categorie 3</div>
-            <div class="item" data-category="categorie1">Nog meer inhoud voor Categorie 1</div>
-        </div>
+
+        <div id="container" class="grid"></div>
     </div>
-    <script src="script.js"></script>
+
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
-
