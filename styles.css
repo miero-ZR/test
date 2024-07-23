@@ -1,1 +1,24 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.filter {
+    width: 200px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.item {
+    margin-bottom: 20px;
+    display: none; /* Verberg standaard alle items */ } ```
 
