@@ -1,0 +1,6 @@
+Publication Year	Author	Title	Publication Title	URL	image	facet_a	facet_b	facet_c	tag_1	tag_2	tag_3
+2021	Author Name	Example Item 1	Example Journal	"C:\Users\LeRombaut\source\repos\local\img\1.png"	test.png	red	pears	alpha	yes	no	yes
+2021	Author Name	Example Item 2	Example Journal	"C:\Users\LeRombaut\source\repos\local\img\2.png"	2.png	blue	apples	beta	yes	yes	no
+2021	Author Name	Example Item 3	Example Journal	"C:\Users\LeRombaut\source\repos\local\img\3.png"		blue	oranges	gamma	no	no	yes
+2021	Author Name	Example Item 4	Example Journal	"C:\Users\LeRombaut\source\repos\local\img\1.png"	3.png	blue	pears	delta	yes	no	yes
+2021	Author Name	Example Item 5	Example Journal	"C:\Users\LeRombaut\source\repos\local\img\1.png"	test.png	blue	apples	alpha	yes	no	no
