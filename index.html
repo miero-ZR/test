@@ -1,1 +1,25 @@
-indexindexindex
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filterbare Inhoud</title>
+    <link rel="stylesheet" href="styles.css"> </head> <body>
+    <div class="container">
+        <div class="filter">
+            <h2>Selecteer een categorie:</h2>
+            <label><input type="radio" name="category" value="categorie1"> Categorie 1</label><br>
+            <label><input type="radio" name="category" value="categorie2"> Categorie 2</label><br>
+            <label><input type="radio" name="category" value="categorie3"> Categorie 3</label>
+        </div>
+        <div class="content">
+            <div class="item" data-category="categorie1">Inhoud voor Categorie 1</div>
+            <div class="item" data-category="categorie2">Inhoud voor Categorie 2</div>
+            <div class="item" data-category="categorie3">Inhoud voor Categorie 3</div>
+            <div class="item" data-category="categorie1">Nog meer inhoud voor Categorie 1</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
