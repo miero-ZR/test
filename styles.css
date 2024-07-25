@@ -1,0 +1,186 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #fff;
+    color: #253b59;
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid #253b59;
+    width: 100%;
+    height: 150px; 
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+
+.header p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.container {
+    display: flex;
+    margin-top: 20px;
+}
+
+/* hover-over text box voor informatie */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px white;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 500px;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  /* border:3px solid red;*/
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  background-color:#253b59;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.filter {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+	color: #253b59;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: calc(220vh - 60px); /* Adjust height to account for header */
+    position: relative;
+	border-radius: 25px;
+    border: 2px solid #253b59;
+}
+
+.filter h2 {
+    font-size: 1.2em;
+    margin-bottom: 0px;
+}
+
+.filter label {
+    display: block;
+    margin-bottom: 0px;
+	line-height:3px;
+	float: left; /* remove whitespace between checkboxes */	
+}
+
+
+.filter button {
+    display: block;
+    margin-top: 20px;
+	padding: 10px;
+	width: 100%;
+	background-color: #253b59;
+	color: white;
+	border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.filter button:hover {
+    dbackground-color: black;
+}
+
+.main {
+    margin-left: 20px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #f5d9d7;
+	color: #253b59;
+/* height: fit-content; */	
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card2 {
+    background-color: #cfbcbc;
+	color: #253b59;
+/* height: fit-content; */	
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    margin-bottom: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+	white-space: pre-line;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); }
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+

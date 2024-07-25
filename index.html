@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storagewijzer</title>
+    <link rel="stylesheet" href="styles.css"> </head> <body>
+    <header class="header">
+        <h1>Storagewijzer</h1>
+        <p>De Storagewijzer helpt je bij het kiezen van ICT-oplossingen voor opslag en beheer van gegevens.</p>
+		<p>Op basis van de behoeften die je aangeeft in de linkerkolom worden de mogelijke oplossingen getoond.</p>
+            <a class="navbar-brand" href="https://www.uantwerpen.be">
+			<img
+                    class="logo"
+                    alt="logo"
+                    src="C:\Users\LeRombaut\source\repos\local\test5\uantwerpen.png"
+                    width="170"
+                    height="66"
+                /></a>
+    </header>
+    <div class="container">
+        <div class="filter">
+		<div><button id="reset-filters">reset filters</button></div>
+		    <h2>Wat is de data classificatie?</h2>
+				<div class="tooltip"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#9432;
+					<span class="tooltiptext">Wat zijn de gevolgen als een onbevoegd persoon toegang krijgt tot gegevens en wat als de gegevens uitlekken?
+						Het is aan de persoon die data wil opslaan, verwerken of verzenden om gegevens te classificeren als:
+						Strikt Vertrouwelijk: Informatie waarvoor bescherming vereist is op basis van wet- en regelgeving, contractuele en/of procedurele/beleidsmatige afspraken en die enkel toegankelijk mag zijn voor een specifieke doelgroep. De informatie dient bijgevolg afgeschermd te worden.  
+						Vertrouwelijk: Informatie die niet als strikt vertrouwelijk werd geclassificeerd en enkel toegankelijk mag zijn voor een specifieke doelgroep. De informatie dient bijgevolg afgeschermd te worden.
+						Niet Vertrouwelijk: Publiek beschikbare informatie, en interne informatie die niet specifiek afgeschermd dient te worden.
+					</span>
+				</div> 
+					<label><input type="checkbox" name="category" value="vertrouwelijk"> vertrouwelijk</label><br>
+					<label><input type="checkbox" name="category" value="strikt-vertrouwelijk"> strikt vertrouwelijk</label><br>
+					<label><input type="checkbox" name="category" value="niet-vertrouwelijk"> niet vertrouwelijk</label><br><br><br>
+		    <h2>Wil je data delen met je collega's?</h2>
+				<div class="tooltip"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#9432;
+					<span class="tooltiptext">Je data delen betekent bepaalde personen toegang geven tot jouw data. 
+						Afhankelijk van het type opslag moet je aan een beheerder vragen dat voor jou te doen.
+					</span>
+				</div> 
+					<label><input type="checkbox" name="category" value="niet-delen"> neen</label><br>
+					<label><input type="checkbox" name="category" value="delen-binnen"> ja, maar alleen binnen de universiteit</label><br>
+					<label><input type="checkbox" name="category" value="delen-buiten"> ja, binnen en buiten de universiteit</label><br><br><br>
+            <h2>Welk type data wil je opslaan?</h2>
+				<div class="tooltip"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#9432;
+					<span class="tooltiptext">Onderzoeksdata zijn alle gegevens die worden gebruikt om onderzoeksresultaten te ondersteunen of te staven. 
+						Zij omvatten het hele spectrum van ruwe data tot datasets die aan een publicatie zijn gekoppeld.  
+						Er wordt abstractie gemaakt van het feit of de data door jou zijn verzameld/gegenereerd of van derden zijn verkregen.
+						Onderzoeksdata omvatten de gegevens, samen met de documentatie en de metadata die nodig zijn om de data te begrijpen.
+					</span>
+				</div>	
+					<label><input type="checkbox" name="category" value="Onderzoeksdata"> Onderzoeksdata</label><br>
+					<label><input type="checkbox" name="category" value="andere"> andere</label><br><br><br>
+			<h2>Wil je metadata opslaan?</h2>
+				<div class="tooltip"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#9432;
+					<span class="tooltiptext">Data over data. Gestandaardiseerde gestructureerde informatie waarin het doel, de oorsprong, de tijdsreferenties, de geografische locatie, de archiefvormer, de toegangsvoorwaarden en de gebruiksvoorwaarden van een gegevensverzameling worden toegelicht (Bron van deze definitie: UK Data Archive).
+						Metadata zijn leesbaar door computers. Eén van de belangrijke voordelen van goede metadata is dat het gegevens vindbaar maakt, bijvoorbeeld in een repository.
+						Metadata kan, samen met documentatie, een individuele studie of een meer complex onderzoeksproject beschrijven.
+					</span>
+				</div>	
+					<label><input type="checkbox" name="category" value="meta"> ja</label><br>
+					<label><input type="checkbox" name="category" value="geen meta"> niet belangrijk</label><br><br><br>	
+ 		    <h2>Hoeveel opslagruimte denk je nodig te hebben?</h2>
+				<div class="tooltip"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#9432;
+					<span class="tooltiptext">Om je een idee te geven van de omvang: 
+						1 TB gegevens is ongeveer 330.000 foto's (ervan uitgaande dat de gemiddelde grootte van een foto 3 MB is) of meer dan 35 uur aan 1080p videobestanden. 
+					</span>
+				</div>	
+					<label><input type="checkbox" name="category" value="min"> minder dan 1TB</label><br>
+					<label><input type="checkbox" name="category" value="tussen"> tussen 1 en 5TB</label><br>
+					<label><input type="checkbox" name="category" value="max"> meer dan 5TB</label><br><br><br>
+ 		    <h2>In welke mate zijn je gegevens reproduceerbaar?</h2>
+				<div class="tooltip"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#9432;
+					<span class="tooltiptext">Wat zijn de gevolgen voor jouw onderzoek als (een gedeelte van) de gegevens corrupt of verloren zijn?  
+						Eenvoudig: corrupte of verloren gegevens zijn een ongemak zijn, kan vrij eenvoudig verholpen worden. 
+						Moeilijk: corrupte of verloren gegevens zouden het onderzoek ongeldig maken, vraagt grote inspanning om dit recht te zetten 
+						Niet: gecorrumpeerde gegevens zouden het onderzoek en mogelijk andere projecten ongeldig maken, reputatieschade kunnen veroorzaken en kunnen leiden tot uitsluiting van toekomstige projecten. 
+					</span>
+				</div>	
+					<label><input type="checkbox" name="category" value="niet"> niet</label><br>
+					<label><input type="checkbox" name="category" value="moeilijk"> moeilijk</label><br>
+					<label><input type="checkbox" name="category" value="eenvoudig"> eenvoudig</label><br><br><br>
+ 		    <h2>Heb je speciale prestatie eisen?</h2>
+				<div class="tooltip"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#9432;
+					<span class="tooltiptext">Hoe meer gegevens je hebt en hoe meer deze zijn verdeeld in bestanden en mappen, hoe meer performantie van de opslagoplossing zal worden gevraagd.  
+					</span>
+				</div>	
+					<label><input type="checkbox" name="category" value="prestatie-nee"> nee</label><br>
+					<label><input type="checkbox" name="category" value="prestatie-ja"> ja</label><br><br><br>
+ 		    <h2>In welke mate is jouw onderzoek afhankelijk van de continue beschikbaarheid van je data??</h2>
+				<div class="tooltip"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#9432;
+					<span class="tooltiptext">Wat is de impact als gegevens een tijd (uren/dagen) niet toegankelijk zijn? 
+						In geringe mate: niet bij de gegevens kunnen  zou hinderlijk zijn.
+						Continue beschikbaarheid is belangrijk: 
+						geen toegang hebben tot de gegevens zou aanzienlijke vertragingen veroorzaken en hoge kosten met zich meebrengen.  
+					</span>
+				</div>	
+					<label><input type="checkbox" name="category" value="beschikbaarheid-nee"> In geringe mate</label><br>
+					<label><input type="checkbox" name="category" value="beschikbaarheid-ja"> continue beschikbaarheid is belangrijk</label><br>
+					<label><input type="checkbox" name="category" value="beschikbaarheid-essentieel"> continue beschikbaarheid is essentieel</label><br><br><br>
+ 		    <h2>Wil je zelf toegang hebben tot eerdere versies van de gegevens?</h2>
+				<div class="tooltip"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#9432;
+					<span class="tooltiptext">Sommige opslagoplossingen bieden u de mogelijkheid om zelf toegang te krijgen tot eerdere versies van de gegevens. 
+						In sommige gevallen moet u de beheerder om vorige versies vragen.  
+					</span>
+				</div>	
+					<label><input type="checkbox" name="category" value="toegang-ja"> ja</label><br>
+					<label><input type="checkbox" name="category" value="toegang-nee"> nee</label><br><br><br>
+ 		    <h2>Hoe wil je toegang tot de gegevens?</h2>
+				<div class="tooltip"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#9432;
+					<span class="tooltiptext">Niet alle opslag is toegankelijk vanaf alle apparaten of locaties, het hangt af van de gebruikte protocollen en/of schijfmapping mogelijk is.  
+					Laat bij twijfel deze vraag open om de opties niet te beperken. 
+					</span>
+				</div>	
+					<label><input type="checkbox" name="category" value="toegang-browser"> Via een browser, overal (https)</label><br>
+					<label><input type="checkbox" name="category" value="toegang-server"> Vanaf een Virtuele server</label><br>					
+					<label><input type="checkbox" name="category" value="toegang-netwerk"> Via een Windows netwerkstation</label><br><br><br>	
+        </div>
+
+
+        <div class="main">
+            <div class="card" data-category="niet-vertrouwelijk,vertrouwelijk,strikt-vertrouwelijk,delen-binnen" data-title="Gedeelde netwerkschijf" data-description="Documenten op een gestructureerde manier delen met vastgelegde groepen van medegebruikers via de N-schijf.
+			
+ 			Prijs	€ ... / TB / jaar
+            Max. opslagcapaciteit	40GB/dienst
+			
+            Delen en samenwerken:			
+			Afhankelijk van de serverinstellingen van de gebruiker heeft deze lees- en/of schrijftoegang tot deze mappen
+			
+            Locatie van de data	Uantwerpen datacenters
+			
+			Beschikbaarheid	Hoog:
+			Automatische kopie op 2 verschillende locaties (onderdeel van het ICT disaster recovery plan): alle bestanden die op de centrale fileshares geplaatst worden, worden volledig transparant voor de eindgebruiker- gekopiëerd naar een 2e identiek systeem.
+
+            Beveiliging	Hoog:			
+            Vertrouwelijkheid	Geschikt voor publieke, confidentiële én strikt confidentiële data.
+            Persoonsgegevens	Geschikt voor het verwerken van alle types persoonsgegevens.
+            Versiebeheer	Versiebeheer is beschikbaar (self-service).">
+                <h3>Gedeelde netwerkschijf</h3>
+                <p>Een gedeeld bestandssysteem dat beschikbaar is voor alle medewerkers via pc's en laptops beheerd door ICT. </p>
+            </div>
+            <div class="card" data-category="vertrouwelijk,niet-vertrouwelijk,strikt-vertrouwelijk,delen,delen-binnen,delen-buiten" data-title="Sharepoint" data-description="SharePoint Online is een Microsoft cloud-oplossing om op een veilige manier documenten en bestanden op te slaan, te beheren en te delen. Een SharePoint Online-site is een afgeschermd en beveiligd platform waarbinnen online samenwerking binnen een groep, gemeenschappelijke bewerking van documenten en uitwisseling van informatie en ideeën wordt ondersteund.
+			
+			Prijs	
+			Max. opslagcapaciteit	10 GB
+			
+			Delen en samenwerken:
+			Toegang via webbrowser. Uitgebreide mogelijkheden om samen te werken.
+			
+			Locatie van de data:
+			Europa
+			
+			Beschikbaarheid:	
+			Data die wij bij Microsoft plaatsen wordt steeds fysiek opgeslagen in datacenters die zich in de EER bevinden (specifiek: Ierland, nederland, Frankrijk, Oostenrijk en Finland).Redundantie op verschillende lagen van de dienstverlening zorgen ervoor dat dataverlies zoveel mogelijk voorkomen wordt 
+
+			Veiligheid:
+			Medium
+			
+			Vertrouwelijkheid:
+			Data die verzonden wordt tussen Microsoft 365 datacenters en clients (bv. jouw computer) wordt beveiligd door middel van TLS 1.2 encryptie. Alle data 'at rest' in de Microsoft 365 datacenters wordt geëncrypteerd opgeslagen door middel van BitLocker (AES 256-bit). Samen met departement ICT kan je afspreken om extra beveiliging op jouw SharePoint Online sites in te stellen. Zo kan je bijvoorbeeld:
+			Vermijden dat leden data extern kunnen delen
+			Voorkomen dat bestanden kunnen verwijderd worden
+			Instellen dat data op jouw site voor een minimumperiode moet bijhouden worden om wettelijke redenen
+			
+			Persoonsgegevens:
+			Geschikt voor persoonsgegevens mits bijkomende maatregelen genomen worden. Lees hier meer over in In welke gevallen en waarom extra maatregelen voor opslag van persoonsgegevens? (pdf).
+			
+			Versiebeheer:
+			Versioning tot max. 100 versies per bestand, enkel door jezelf terug te zetten. Deze versies worden automatisch verwijderd wanneer ze ouder zijn dan 180 dagen. Verwijderde items tot 93 dagen terug in jouw 'prullenbak', door jezelf terug te zetten. Prullenbak leeg gemaakt vóór het verstrijken van deze periode? Dan kan Dept. ICT jouw bestanden nog terughalen.
+			Volledige OneDrive herstellen naar een bepaald tijdspunt kan je via 'Restore my OneDrive'. (gebruikt achterliggend het mechanisme van 'versioning')
+			
+			Volledige SharePoint Online site herstellen naar een bepaald tijdspunt kan je via 'Restore files'. (gebruikt achterliggend het mechanisme van 'versioning')
+			Verwijderde (OneDrive of SharePoint) site kan tot 30 dagen na het verwijderen hersteld worden door Dept. ICT. 
+			
+			Backup:
+			Het Departement ICT van UAntwerpen neemt zelf géén back-ups van data op Microsoft 365. 
+			Een klassieke 'point-in-time restore' door onze dienst is bijgevolg niet mogelijk, al kunnen we door gebruik te maken van bovenstaande technieken in heel wat gevallen je toch verder helpen bij het herstellen van data.
+			
+			Versiebeheer is beschikbaar. ">
+                <h3>Sharepoint</h3>
+                <p>Microsoft cloud-oplossing om documenten en bestanden op te slaan, te beheren en te delen.</p>
+            </div>
+            <div class="card" data-category="vertrouwelijk,niet-vertrouwelijk,strikt-vertrouwelijk,delen,delen-binnen,delen-buiten" data-title="Teams" data-description="Teams is een geïntegreerd communicatie- en samenwerkingsplatform. 
+			Met Teams kan je onder meer op een geavanceerde manier chatten, videoconferenties beleggen, notities maken, en bestanden opslaan en delen.
+			
+			Uitgebreide mogelijkheid tot samenwerking, keuze uit 4 types : 
+			Class, PLC, Staff of Other. 
+			
+			Bepalen van toegang op folderniveau, toekennen van fijnmazige gebruikersrechten; e.g. lezen, uploaden, admin, delen van bestanden via een shared-link).  Gedeelde OneNote
+			
+			Vertouwelijkheid:
+			Data die verzonden wordt tussen Microsoft 365 datacenters en clients (bv. jouw computer) wordt beveiligd door middel van TLS 1.2 encryptie. 
+			Alle data 'at rest' in de Microsoft 365 datacenters wordt geëncrypteerd opgeslagen door middel van BitLocker (AES 256-bit). 
+			
+			Locatie van de data:
+			Europa
+			
+			Versiebeheer:
+			Versioning tot max. 100 versies per bestand, enkel door jezelf terug te zetten. 
+			Deze versies worden automatisch verwijderd wanneer ze ouder zijn dan 180 dagen. 
+			Verwijderde items tot 93 dagen terug in jouw “prullenbak”, door jezelf terug te zetten. 
+			Prullenbak leeg gemaakt vóór het verstrijken van deze periode? Dan kan Dept. ICT jouw bestanden nog terughalen.">
+                <h3>Teams</h3>
+                <p>Microsoft cloud-oplossing voor communicatie en samenwerking</p>
+            </div>
+            <div class="card" data-category="vertrouwelijk,niet-vertrouwelijk,strikt-vertrouwelijk,niet-delen" data-title="Persoonlijke home folder" data-description="Deze homefolder is in'Mijn Computer beschikbaar als de H:-schijf. 
+			Hierop kunnen personeelsleden en studenten documenten bewaren die ze onafhankelijk van het werkstation waarop ze werken, kunnen bekijken en/of bewerken. 
+			
+			Prijs	€ ... / TB / jaar
+            Max. opslagcapaciteit	1,5GB voor personeelsleden, 100MB voor studenten
+			
+            Delen en samenwerken:			
+			Niet mogelijk. Alleen de eigenaar van deze folder heeft hier lees- en schrijfrecht op. 
+			Voor alle andere gebruikers is deze folder en de onderliggende documenten onbereikbaar. 
+			
+            Locatie van de data	: Uantwerpen datacenters
+			
+			Beschikbaarheid	Hoog:
+			Automatische kopie op 2 verschillende locaties (onderdeel van het ICT disaster recovery plan): alle bestanden die op de centrale fileshares geplaatst worden, worden volledig transparant voor de eindgebruiker- gekopiëerd naar een 2e identiek systeem.
+
+            Beveiliging	Hoog:			
+            Vertrouwelijkheid	Geschikt voor publieke, confidentiële én strikt confidentiële data.
+            Persoonsgegevens	Geschikt voor het verwerken van alle types persoonsgegevens.
+            Versiebeheer	Versiebeheer is beschikbaar (self-service).">
+	                <h3>Persoonlijke netwerkschijf</h3>
+                <p>Een persoonlijk bestandssysteem voor professioneel gebruik dat beschikbaar is voor alle medewerkers via pc's en laptops beheerd door ICT. </p>
+            </div>
+			<div class="card" data-category="vertrouwelijk,niet-vertrouwelijk,strikt-persoonlijk,delen,binnen-delen,buiten-delen" data-title="Onedrive" data-description="OneDrive for Business is een cloudoplossing van Microsoft om documenten en bestanden veilig op te slaan, te beheren en te delen. 
+			
+			Prijs	€ ... / TB / jaar
+            Max. opslagcapaciteit	100 GB
+			
+			Delen en samenwerken:
+			OneDrive bestanden kan je het delen met anderen door een koppeling op te halen.  
+			Gemeenschappelijke bestanden deel je best niet via een persoonsgebonden OneDrive For Business, want als de gebruiker uit dienst gaat, zullen die bestanden ook mee verdwijnen.
+			
+			Vertouwelijkheid:
+			Data die verzonden wordt tussen Microsoft 365 datacenters en clients (bv. jouw computer) wordt beveiligd door middel van TLS 1.2 encryptie. 
+			Alle data 'at rest' in de Microsoft 365 datacenters wordt geëncrypteerd opgeslagen door middel van BitLocker (AES 256-bit). 
+			
+			Locatie van de data:
+			Europa
+			
+			Versiebeheer:
+			Versioning tot max. 100 versies per bestand, enkel door jezelf terug te zetten. 
+			Deze versies worden automatisch verwijderd wanneer ze ouder zijn dan 180 dagen. 
+			Verwijderde items tot 93 dagen terug in jouw “prullenbak”, door jezelf terug te zetten. 
+			Prullenbak leeg gemaakt vóór het verstrijken van deze periode? Dan kan Dept. ICT jouw bestanden nog terughalen.">
+                <h3>OneDrive</h3>
+                <p>Persoonlijke cloud-storage via Microsoft 365. </p>
+           </div>				
+			<div class="card" data-category="niet-vertrouwelijk,niet-delen" data-title="Lokale oppas op een ICT beheerde laptop" data-description="Beheerde toestellen zijn up-to-date wat betreft beveiligingsupdates enti virus-software. 
+			De harde schijf wordt geecrypteerd met Bitlocker
+			
+			Delen en samenwerken:
+			niet mogelijk
+			
+			geen backup van lokaal opgeslagen data">
+                <h3>Lokale opslag op laptop</h3>
+                <p>Opslag op toestellen beheerd door ICT. </p>	
+            </div>
+			<div class="card" data-category="category1" data-title="Publieke cloudopslag" data-description="Heb je nood aan een specifieke werkprestaties waarvoor het gebruik van cloud resources aangewezen is, dan kan ICT je assisteren bij het opzet van een betalende subscriptie.
+			
+			De subscriptie, het beheer, de opvolging , alsook dat deze voldoet aan de UAntwerpen ICT vereisten omtrent authenticatie, logging, patchbeleid is je eigen verantwoordelijkheid
+			
+			financiering van deze omgeving is je eigen verantwoordelijkheid">
+                <h3>Publieke cloud opslag</h3>
+                <p>Betalende subscriptie, ICT  kan je assisteren bij het opzet. </p>	
+            </div>
+			<div class="card2" data-category="vertrouwelijk,onderzoeksdata" data-title="Digitale kluis" data-description="Description for ad 7">
+                <h3>Digitale kluis</h3>
+                <p> </p>	
+            </div>
+			<div class="card2" data-category="" data-title="Ad Title 7" data-description="Description for ad 7">
+                <h3></h3>
+                <p> </p>	
+            </div>
+			<div class="card2" data-category="" data-title="Ad Title 7" data-description="Description for ad 7">
+                <h3></h3>
+                <p> </p>	
+            </div>
+			<div class="card2" data-category="" data-title="Ad Title 7" data-description="Description for ad 7">
+                <h3></h3>
+                <p> </p>	
+            </div>
+			<div class="card2" data-category="" data-title="Ad Title 7" data-description="Description for ad 7">
+                <h3></h3>
+                <p> </p>	
+            </div>
+			<div class="card2" data-category="" data-title="Ad Title 7" data-description="Description for ad 7">
+                <h3></h3>
+                <p></p>	
+            </div>
+			<div class="card2" data-category="" data-title="Ad Title 7" data-description="Description for ad 7">
+                <h3></h3>
+                <p> </p>	
+            </div>
+			<div class="card2" data-category="" data-title="Ad Title 7" data-description="Description for ad 7">
+                <h3></h3>
+                <p> </p>	
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
