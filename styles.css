@@ -1,6 +1,6 @@
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Roboto, Helvetica Neue;
     background-color: #f0f2f5;
     margin: 0;
     padding: 0;
@@ -96,12 +96,13 @@ body {
 	width: 100%;
 	background-color: #253b59;
 	color: white;
+
 	border-radius: 8px;
     transition: transform 0.3s;
 }
 
 .filter button:hover {
-    dbackground-color: black;
+    background-color: #d43f3f;
 }
 
 .main {
@@ -113,25 +114,17 @@ body {
 }
 
 .card {
-    background-color: #f5d9d7;
+/*  background-color: #f5d9d7; */
+	background-color: white;
 	color: #253b59;
-/* height: fit-content; */	
-    padding: 20px;
+/*  height: fit-content; */	
+    padding: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+/*  border-radius: 8px; */
     cursor: pointer;
     transition: transform 0.3s;
-}
-
-.card2 {
-    background-color: #cfbcbc;
-	color: #253b59;
-/* height: fit-content; */	
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.3s;
+	border-radius: 25px;
+/*  border: 2px solid #253b59;*/
 }
 
 .card:hover {
@@ -144,6 +137,22 @@ body {
 
 .card p {
     margin-bottom: 0;
+}
+
+.card2 {
+    background-color: #e3dddc;
+	color: #253b59;
+/* height: fit-content; */	
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+ /*   cursor: pointer; */
+    transition: transform 0.3s;
+}
+
+.card2 h3 {
+	color: grey;
+    margin-top: 0;
 }
 
 .modal {
