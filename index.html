@@ -50,8 +50,8 @@
 						Onderzoeksdata omvatten de gegevens, samen met de documentatie en de metadata die nodig zijn om de data te begrijpen.
 					</span>
 				</div>	
-					<label><input type="checkbox" name="category" value="Onderzoeksdata"> Onderzoeksdata</label><br>
-					<label><input type="checkbox" name="category" value="andere"> andere</label><br><br><br>
+					<label><input type="checkbox" name="category" value="onderzoeksdata"> Onderzoeksdata</label><br>
+					<label><input type="checkbox" name="category" value="andere-data"> andere</label><br><br><br>
 			<h2>Wil je metadata opslaan?</h2>
 				<div class="tooltip"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#9432;
 					<span class="tooltiptext">Data over data. Gestandaardiseerde gestructureerde informatie waarin het doel, de oorsprong, de tijdsreferenties, de geografische locatie, de archiefvormer, de toegangsvoorwaarden en de gebruiksvoorwaarden van een gegevensverzameling worden toegelicht (Bron van deze definitie: UK Data Archive).
@@ -59,17 +59,17 @@
 						Metadata kan, samen met documentatie, een individuele studie of een meer complex onderzoeksproject beschrijven.
 					</span>
 				</div>	
-					<label><input type="checkbox" name="category" value="meta"> ja</label><br>
-					<label><input type="checkbox" name="category" value="geen meta"> niet belangrijk</label><br><br><br>	
+					<label><input type="checkbox" name="category" value="meta-ja"> ja</label><br>
+					<label><input type="checkbox" name="category" value="meta-nee"> niet belangrijk</label><br><br><br>	
  		    <h2>Hoeveel opslagruimte denk je nodig te hebben?</h2>
 				<div class="tooltip"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#9432;
 					<span class="tooltiptext">Om je een idee te geven van de omvang: 
 						1 TB gegevens is ongeveer 330.000 foto's (ervan uitgaande dat de gemiddelde grootte van een foto 3 MB is) of meer dan 35 uur aan 1080p videobestanden. 
 					</span>
 				</div>	
-					<label><input type="checkbox" name="category" value="min"> minder dan 1TB</label><br>
-					<label><input type="checkbox" name="category" value="tussen"> tussen 1 en 5TB</label><br>
-					<label><input type="checkbox" name="category" value="max"> meer dan 5TB</label><br><br><br>
+					<label><input type="checkbox" name="category" value="storage-min"> minder dan 1TB</label><br>
+					<label><input type="checkbox" name="category" value="storage-tussen"> tussen 1 en 5TB</label><br>
+					<label><input type="checkbox" name="category" value="storage-max"> meer dan 5TB</label><br><br><br>
  		    <h2>In welke mate zijn je gegevens reproduceerbaar?</h2>
 				<div class="tooltip"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#9432;
 					<span class="tooltiptext">Wat zijn de gevolgen voor jouw onderzoek als (een gedeelte van) de gegevens corrupt of verloren zijn?  
@@ -78,9 +78,9 @@
 						Niet: gecorrumpeerde gegevens zouden het onderzoek en mogelijk andere projecten ongeldig maken, reputatieschade kunnen veroorzaken en kunnen leiden tot uitsluiting van toekomstige projecten. 
 					</span>
 				</div>	
-					<label><input type="checkbox" name="category" value="niet"> niet</label><br>
-					<label><input type="checkbox" name="category" value="moeilijk"> moeilijk</label><br>
-					<label><input type="checkbox" name="category" value="eenvoudig"> eenvoudig</label><br><br><br>
+					<label><input type="checkbox" name="category" value="reproduceerbaar-niet"> niet</label><br>
+					<label><input type="checkbox" name="category" value="reproduceerbaar-moeilijk"> moeilijk</label><br>
+					<label><input type="checkbox" name="category" value="reproduceerbaar-eenvoudig"> eenvoudig</label><br><br><br>
  		    <h2>Heb je speciale prestatie eisen?</h2>
 				<div class="tooltip"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#9432;
 					<span class="tooltiptext">Hoe meer gegevens je hebt en hoe meer deze zijn verdeeld in bestanden en mappen, hoe meer performantie van de opslagoplossing zal worden gevraagd.  
@@ -88,7 +88,7 @@
 				</div>	
 					<label><input type="checkbox" name="category" value="prestatie-nee"> nee</label><br>
 					<label><input type="checkbox" name="category" value="prestatie-ja"> ja</label><br><br><br>
- 		    <h2>In welke mate is jouw onderzoek afhankelijk van de continue beschikbaarheid van je data??</h2>
+ 		    <h2>In welke mate is jouw onderzoek afhankelijk van de continue beschikbaarheid van je data?</h2>
 				<div class="tooltip"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#9432;
 					<span class="tooltiptext">Wat is de impact als gegevens een tijd (uren/dagen) niet toegankelijk zijn? 
 						In geringe mate: niet bij de gegevens kunnen  zou hinderlijk zijn.
@@ -120,7 +120,7 @@
 
 
         <div class="main">
-            <div class="card" data-category="niet-vertrouwelijk,vertrouwelijk,strikt-vertrouwelijk,delen-binnen" data-title="Gedeelde netwerkschijf" data-description="Documenten op een gestructureerde manier delen met vastgelegde groepen van medegebruikers via de N-schijf.
+            <div class="card" data-category="niet-vertrouwelijk,vertrouwelijk,strikt-vertrouwelijk,delen-binnen,onderzoeksdata,andere-data,meta-nee,storage-min,storage-tussen,storage-max,reproduceerbaar-niet,reproduceerbaar-moeilijk,reproduceerbaar-eenvoudig,prestatie-nee,prestatie-ja,beschikbaarheid-,beschikbaarheid-nee,beschikbaarheid-essentieel,toegang-ja,toegang-nee,toegang-netwerk" data-title="Gedeelde netwerkschijf" data-description="Documenten op een gestructureerde manier delen met vastgelegde groepen van medegebruikers via de N-schijf.
 			
  			Prijs	€ ... / TB / jaar
             Max. opslagcapaciteit	40GB/dienst
@@ -128,7 +128,8 @@
             Delen en samenwerken:			
 			Afhankelijk van de serverinstellingen van de gebruiker heeft deze lees- en/of schrijftoegang tot deze mappen
 			
-            Locatie van de data	Uantwerpen datacenters
+            Locatie van de data:
+			Uantwerpen datacenters
 			
 			Beschikbaarheid	Hoog:
 			Automatische kopie op 2 verschillende locaties (onderdeel van het ICT disaster recovery plan): alle bestanden die op de centrale fileshares geplaatst worden, worden volledig transparant voor de eindgebruiker- gekopiëerd naar een 2e identiek systeem.
@@ -138,9 +139,9 @@
             Persoonsgegevens	Geschikt voor het verwerken van alle types persoonsgegevens.
             Versiebeheer	Versiebeheer is beschikbaar (self-service).">
                 <h3>Gedeelde netwerkschijf</h3>
-                <p>Een gedeeld bestandssysteem dat beschikbaar is voor alle medewerkers via pc's en laptops beheerd door ICT. </p>
+                <p>Documenten op een gestructureerde manier delen met vastgelegde groepen van medegebruikers via de N-schijf </p>
             </div>
-            <div class="card" data-category="vertrouwelijk,niet-vertrouwelijk,strikt-vertrouwelijk,delen,delen-binnen,delen-buiten" data-title="Sharepoint" data-description="SharePoint Online is een Microsoft cloud-oplossing om op een veilige manier documenten en bestanden op te slaan, te beheren en te delen. Een SharePoint Online-site is een afgeschermd en beveiligd platform waarbinnen online samenwerking binnen een groep, gemeenschappelijke bewerking van documenten en uitwisseling van informatie en ideeën wordt ondersteund.
+            <div class="card" data-category="vertrouwelijk,niet-vertrouwelijk,strikt-vertrouwelijk,niet-delen,delen-binnen,delen-buitenonderzoeksdata,andere-data,meta-ja,meta-nee,storage-min,reproduceerbaar-niet,reproduceerbaar-moeilijk,reproduceerbaar-eenvoudig,prestatie-nee,beschikbaarheid-,beschikbaarheid-nee,toegang-ja,toegang-nee,toegang-browser" data-title="Sharepoint" data-description="SharePoint Online is een Microsoft cloud-oplossing om op een veilige manier documenten en bestanden op te slaan, te beheren en te delen. Een SharePoint Online-site is een afgeschermd en beveiligd platform waarbinnen online samenwerking binnen een groep, gemeenschappelijke bewerking van documenten en uitwisseling van informatie en ideeën wordt ondersteund.
 			
 			Prijs	
 			Max. opslagcapaciteit	10 GB
@@ -181,7 +182,7 @@
                 <h3>Sharepoint</h3>
                 <p>Microsoft cloud-oplossing om documenten en bestanden op te slaan, te beheren en te delen.</p>
             </div>
-            <div class="card" data-category="vertrouwelijk,niet-vertrouwelijk,strikt-vertrouwelijk,delen,delen-binnen,delen-buiten" data-title="Teams" data-description="Teams is een geïntegreerd communicatie- en samenwerkingsplatform. 
+            <div class="card" data-category="niet-vertrouwelijk,vertrouwelijk,strikt-vertrouwelijk,niet-delen,delen-buiten,delen-binnen,onderzoeksdata,andere-data,meta-nee,meta-ja,storage-min,reproduceerbaar-niet,reproduceerbaar-moeilijk,reproduceerbaar-eenvoudig,prestatie-nee,beschikbaarheid-nee,beschikbaarheid-ja,toegang-ja,toegang-nee,toegang-browser" data-title="Teams" data-description="Teams is een geïntegreerd communicatie- en samenwerkingsplatform. 
 			Met Teams kan je onder meer op een geavanceerde manier chatten, videoconferenties beleggen, notities maken, en bestanden opslaan en delen.
 			
 			Uitgebreide mogelijkheid tot samenwerking, keuze uit 4 types : 
@@ -204,7 +205,7 @@
                 <h3>Teams</h3>
                 <p>Microsoft cloud-oplossing voor communicatie en samenwerking</p>
             </div>
-            <div class="card" data-category="vertrouwelijk,niet-vertrouwelijk,strikt-vertrouwelijk,niet-delen" data-title="Persoonlijke home folder" data-description="Deze homefolder is in'Mijn Computer beschikbaar als de H:-schijf. 
+            <div class="card" data-category="niet-vertrouwelijk,vertrouwelijk,strikt-vertrouwelijk,niet-delen,onderzoeksdata,andere-data,meta-nee,storage-min,reproduceerbaar-niet,reproduceerbaar-moeilijk,reproduceerbaar-eenvoudig,prestatie-nee,beschikbaarheid-nee,beschikbaarheid-ja,beschikbaarheid-essentieel,toegang-ja,toegang-nee,toegang-netwerk" data-title="Persoonlijke home folder" data-description="Deze homefolder is in'Mijn Computer beschikbaar als de H:-schijf. 
 			Hierop kunnen personeelsleden en studenten documenten bewaren die ze onafhankelijk van het werkstation waarop ze werken, kunnen bekijken en/of bewerken. 
 			
 			Prijs	€ ... / TB / jaar
@@ -226,10 +227,9 @@
 	                <h3>Persoonlijke netwerkschijf</h3>
                 <p>Een persoonlijk bestandssysteem voor professioneel gebruik dat beschikbaar is voor alle medewerkers via pc's en laptops beheerd door ICT. </p>
             </div>
-			<div class="card" data-category="vertrouwelijk,niet-vertrouwelijk,strikt-persoonlijk,delen,binnen-delen,buiten-delen" data-title="Onedrive" data-description="OneDrive for Business is een cloudoplossing van Microsoft om documenten en bestanden veilig op te slaan, te beheren en te delen. 
+			<div class="card" data-category="niet-vertrouwelijk,vertrouwelijk,strikt-vertrouwelijk,niet-delen,delen-buiten,delen-binnen,onderzoeksdata,andere-data,meta-nee,meta-ja,storage-min,reproduceerbaar-niet,reproduceerbaar-moeilijk,reproduceerbaar-eenvoudig,prestatie-nee,beschikbaarheid-nee,beschikbaarheid-ja,toegang-ja,toegang-nee,toegang-browser" data-title="OneDrive For Business" data-description="OneDrive for Business is een cloudoplossing van Microsoft om documenten en bestanden veilig op te slaan, te beheren en te delen. 
 			
-			Prijs	€ ... / TB / jaar
-            Max. opslagcapaciteit	100 GB
+			Max. opslagcapaciteit	100 GB
 			
 			Delen en samenwerken:
 			OneDrive bestanden kan je het delen met anderen door een koppeling op te halen.  
@@ -250,13 +250,16 @@
                 <h3>OneDrive</h3>
                 <p>Persoonlijke cloud-storage via Microsoft 365. </p>
            </div>				
-			<div class="card" data-category="niet-vertrouwelijk,niet-delen" data-title="Lokale oppas op een ICT beheerde laptop" data-description="Beheerde toestellen zijn up-to-date wat betreft beveiligingsupdates enti virus-software. 
+			<div class="card" data-category="niet-vertrouwelijk,niet-delen,andere-data,meta-nee,storage-min,reproduceerbaar-eenvoudig,prestatie-nee,beschikbaarheid-nee,toegang-nee" data-title="Lokale opslag op een ICT beheerde laptop" data-description="Beheerde toestellen zijn up-to-date wat betreft beveiligingsupdates enti virus-software. 
 			De harde schijf wordt geecrypteerd met Bitlocker
 			
 			Delen en samenwerken:
 			niet mogelijk
 			
-			geen backup van lokaal opgeslagen data">
+			Geen backup van lokaal opgeslagen data
+			De kans op verlies, diefstal of beschadiging van je toestel maken deze oplossing niet geschikt voor opslag van data. 
+			Aangeraden wordt om enkel voor korte tijd data op je toestel op te slaan.
+			">
                 <h3>Lokale opslag op laptop</h3>
                 <p>Opslag op toestellen beheerd door ICT. </p>	
             </div>
@@ -268,7 +271,7 @@
                 <h3>Publieke cloud opslag</h3>
                 <p>Betalende subscriptie, ICT  kan je assisteren bij het opzet. </p>	
             </div>
-			<div class="card2" data-category="vertrouwelijk,onderzoeksdata" data-title="Digitale kluis" data-description="Description for ad 7">
+			<div class="card2" data-category="niet-vertrouwelijk,vertrouwelijk,strikt-vertrouwelijk,niet-delen,delen-buiten,onderzoeksdata,andere-data,meta-nee,meta-ja,storage-min,reproduceerbaar-niet,reproduceerbaar-moeilijk,reproduceerbaar-eenvoudig,prestatie-nee,beschikbaarheid-nee,beschikbaarheid-ja,toegang-ja,toegang-nee,toegang-browser" data-title="Digitale kluis" data-description="Description for ad 7">
                 <h3>Digitale kluis</h3>
                 <p> </p>	
             </div>
